@@ -1,14 +1,15 @@
 import { defineConfig } from 'dumi';
 
+const repo = 'Go-ops-doc';
 export default defineConfig({
+  
   title: 'Go-OPS',
   favicon:
-    '/logo_github_icon_143196.png',
-  logo: '/logo_github_icon_143196.png',
+    `/${repo}/logo_github_icon_143196.png`,
+  logo: `/${repo}/logo_github_icon_143196.png`,
   outputPath: 'docs-dist',
   mode: 'site',
-  sitemap: {
-    hostname: "https://luxingwen.github.io/Go-ops-doc/"
-  }
+  base: `/${repo}/`,
+  publicPath: `/${repo}/`,
   // more config: https://d.umijs.org/config
 });
